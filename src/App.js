@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { AccordionDemo } from "./Accordion";
+import { CardWithForm } from "./Card";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col items-center max-w-7xl mx-auto border p-4 rounded-lg space-y-5">
+      <h1 className="text-lg font-bold">App</h1>
+      <AccordionDemo />
+      <CardWithForm />
     </div>
   );
 }
-
-export default App;
